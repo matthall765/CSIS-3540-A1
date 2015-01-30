@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Db4objects.Db4o;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Assignment1
 {
-    public partial class Form1 : Form
+    public partial class frmA1 : Form
     {
-        public Form1()
+        public frmA1()
         {
             InitializeComponent();
         }
