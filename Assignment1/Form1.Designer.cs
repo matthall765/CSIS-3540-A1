@@ -36,11 +36,12 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtEmpID = new System.Windows.Forms.TextBox();
             this.txtSalary = new System.Windows.Forms.TextBox();
-            this.lstResult = new System.Windows.Forms.ListBox();
             this.cmdDb4o = new System.Windows.Forms.Button();
             this.cmdLINQ = new System.Windows.Forms.Button();
             this.cmdInsert = new System.Windows.Forms.Button();
             this.cmdExit = new System.Windows.Forms.Button();
+            this.dgvResult = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResult)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -107,17 +108,9 @@
             this.txtSalary.Size = new System.Drawing.Size(100, 20);
             this.txtSalary.TabIndex = 7;
             // 
-            // lstResult
-            // 
-            this.lstResult.FormattingEnabled = true;
-            this.lstResult.Location = new System.Drawing.Point(117, 132);
-            this.lstResult.Name = "lstResult";
-            this.lstResult.Size = new System.Drawing.Size(123, 108);
-            this.lstResult.TabIndex = 8;
-            // 
             // cmdDb4o
             // 
-            this.cmdDb4o.Location = new System.Drawing.Point(52, 132);
+            this.cmdDb4o.Location = new System.Drawing.Point(171, 77);
             this.cmdDb4o.Name = "cmdDb4o";
             this.cmdDb4o.Size = new System.Drawing.Size(59, 50);
             this.cmdDb4o.TabIndex = 9;
@@ -126,7 +119,7 @@
             // 
             // cmdLINQ
             // 
-            this.cmdLINQ.Location = new System.Drawing.Point(52, 189);
+            this.cmdLINQ.Location = new System.Drawing.Point(78, 76);
             this.cmdLINQ.Name = "cmdLINQ";
             this.cmdLINQ.Size = new System.Drawing.Size(59, 51);
             this.cmdLINQ.TabIndex = 10;
@@ -135,7 +128,7 @@
             // 
             // cmdInsert
             // 
-            this.cmdInsert.Location = new System.Drawing.Point(144, 75);
+            this.cmdInsert.Location = new System.Drawing.Point(259, 75);
             this.cmdInsert.Name = "cmdInsert";
             this.cmdInsert.Size = new System.Drawing.Size(59, 51);
             this.cmdInsert.TabIndex = 11;
@@ -144,23 +137,31 @@
             // 
             // cmdExit
             // 
-            this.cmdExit.Location = new System.Drawing.Point(269, 173);
+            this.cmdExit.Location = new System.Drawing.Point(7, 231);
             this.cmdExit.Name = "cmdExit";
-            this.cmdExit.Size = new System.Drawing.Size(75, 66);
+            this.cmdExit.Size = new System.Drawing.Size(65, 52);
             this.cmdExit.TabIndex = 12;
             this.cmdExit.Text = "Exit";
             this.cmdExit.UseVisualStyleBackColor = true;
+            // 
+            // dgvResult
+            // 
+            this.dgvResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvResult.Location = new System.Drawing.Point(78, 133);
+            this.dgvResult.Name = "dgvResult";
+            this.dgvResult.Size = new System.Drawing.Size(240, 150);
+            this.dgvResult.TabIndex = 13;
             // 
             // frmA1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 251);
+            this.ClientSize = new System.Drawing.Size(356, 302);
+            this.Controls.Add(this.dgvResult);
             this.Controls.Add(this.cmdExit);
             this.Controls.Add(this.cmdInsert);
             this.Controls.Add(this.cmdLINQ);
             this.Controls.Add(this.cmdDb4o);
-            this.Controls.Add(this.lstResult);
             this.Controls.Add(this.txtSalary);
             this.Controls.Add(this.txtEmpID);
             this.Controls.Add(this.label4);
@@ -171,6 +172,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmA1";
             this.Text = "Assignment 1 - Matthew Hall";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvResult)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,11 +188,11 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtEmpID;
         private System.Windows.Forms.TextBox txtSalary;
-        private System.Windows.Forms.ListBox lstResult;
         private System.Windows.Forms.Button cmdDb4o;
         private System.Windows.Forms.Button cmdLINQ;
         private System.Windows.Forms.Button cmdInsert;
         private System.Windows.Forms.Button cmdExit;
+        private System.Windows.Forms.DataGridView dgvResult;
     }
 }
 
