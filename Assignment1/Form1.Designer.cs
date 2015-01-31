@@ -110,7 +110,7 @@
             // 
             // cmdDb4o
             // 
-            this.cmdDb4o.Location = new System.Drawing.Point(171, 77);
+            this.cmdDb4o.Location = new System.Drawing.Point(7, 118);
             this.cmdDb4o.Name = "cmdDb4o";
             this.cmdDb4o.Size = new System.Drawing.Size(59, 50);
             this.cmdDb4o.TabIndex = 9;
@@ -119,7 +119,7 @@
             // 
             // cmdLINQ
             // 
-            this.cmdLINQ.Location = new System.Drawing.Point(78, 76);
+            this.cmdLINQ.Location = new System.Drawing.Point(7, 174);
             this.cmdLINQ.Name = "cmdLINQ";
             this.cmdLINQ.Size = new System.Drawing.Size(59, 51);
             this.cmdLINQ.TabIndex = 10;
@@ -128,7 +128,7 @@
             // 
             // cmdInsert
             // 
-            this.cmdInsert.Location = new System.Drawing.Point(259, 75);
+            this.cmdInsert.Location = new System.Drawing.Point(7, 61);
             this.cmdInsert.Name = "cmdInsert";
             this.cmdInsert.Size = new System.Drawing.Size(59, 51);
             this.cmdInsert.TabIndex = 11;
@@ -139,7 +139,7 @@
             // 
             this.cmdExit.Location = new System.Drawing.Point(7, 231);
             this.cmdExit.Name = "cmdExit";
-            this.cmdExit.Size = new System.Drawing.Size(65, 52);
+            this.cmdExit.Size = new System.Drawing.Size(59, 52);
             this.cmdExit.TabIndex = 12;
             this.cmdExit.Text = "Exit";
             this.cmdExit.UseVisualStyleBackColor = true;
@@ -147,16 +147,16 @@
             // dgvResult
             // 
             this.dgvResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResult.Location = new System.Drawing.Point(78, 133);
+            this.dgvResult.Location = new System.Drawing.Point(78, 64);
             this.dgvResult.Name = "dgvResult";
-            this.dgvResult.Size = new System.Drawing.Size(240, 150);
+            this.dgvResult.Size = new System.Drawing.Size(265, 219);
             this.dgvResult.TabIndex = 13;
             // 
             // frmA1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(356, 302);
+            this.ClientSize = new System.Drawing.Size(355, 302);
             this.Controls.Add(this.dgvResult);
             this.Controls.Add(this.cmdExit);
             this.Controls.Add(this.cmdInsert);
