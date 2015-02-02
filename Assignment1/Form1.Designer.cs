@@ -41,6 +41,7 @@
             this.cmdInsert = new System.Windows.Forms.Button();
             this.cmdExit = new System.Windows.Forms.Button();
             this.dgvResult = new System.Windows.Forms.DataGridView();
+            this.cmdShowAll = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResult)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,7 +111,7 @@
             // 
             // cmdDb4o
             // 
-            this.cmdDb4o.Location = new System.Drawing.Point(7, 64);
+            this.cmdDb4o.Location = new System.Drawing.Point(7, 81);
             this.cmdDb4o.Name = "cmdDb4o";
             this.cmdDb4o.Size = new System.Drawing.Size(59, 50);
             this.cmdDb4o.TabIndex = 9;
@@ -120,7 +121,7 @@
             // 
             // cmdLINQ
             // 
-            this.cmdLINQ.Location = new System.Drawing.Point(7, 146);
+            this.cmdLINQ.Location = new System.Drawing.Point(7, 158);
             this.cmdLINQ.Name = "cmdLINQ";
             this.cmdLINQ.Size = new System.Drawing.Size(59, 51);
             this.cmdLINQ.TabIndex = 10;
@@ -155,11 +156,22 @@
             this.dgvResult.Size = new System.Drawing.Size(436, 219);
             this.dgvResult.TabIndex = 13;
             // 
+            // cmdShowAll
+            // 
+            this.cmdShowAll.Location = new System.Drawing.Point(7, 7);
+            this.cmdShowAll.Name = "cmdShowAll";
+            this.cmdShowAll.Size = new System.Drawing.Size(59, 50);
+            this.cmdShowAll.TabIndex = 14;
+            this.cmdShowAll.Text = "Show All";
+            this.cmdShowAll.UseVisualStyleBackColor = true;
+            this.cmdShowAll.Click += new System.EventHandler(this.cmdShowAll_Click);
+            // 
             // frmA1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(525, 302);
+            this.Controls.Add(this.cmdShowAll);
             this.Controls.Add(this.dgvResult);
             this.Controls.Add(this.cmdExit);
             this.Controls.Add(this.cmdInsert);
@@ -197,6 +209,7 @@
         private System.Windows.Forms.Button cmdInsert;
         private System.Windows.Forms.Button cmdExit;
         private System.Windows.Forms.DataGridView dgvResult;
+        private System.Windows.Forms.Button cmdShowAll;
     }
 }
 

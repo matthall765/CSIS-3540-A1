@@ -60,47 +60,6 @@ namespace Assignment1
                 dgvResult.Rows.Add(v.ID, v.FNAME, v.LNAME, v.SALARY);
         }
 
-
-        /*private void storeToList(IObjectSet result)
-        {
-            employee.Clear();
-            foreach (Employee v in result)
-                employee.Add(v);
-        }
-
-        private void storeDataToList(IObjectSet result)
-        {
-            employee.Clear(); //delete previously stored data
-            foreach (Employee v in result)
-                employee.Add(v); // transferring the data into a List
-        }
-
-        public IObjectSet retrieveData(int id)
-        {
-            IQuery query = db.Query();
-            query.Constrain(typeof(Employee));
-            query.Descend("EmpID").Constrain(id);
-            IObjectSet result = query.Execute();
-            return result;
-        }
-
-        private void retrieveAll()
-        {
-            IObjectSet result = db.QueryByExample(typeof(Employee));
-
-            // loading the data
-            storeDataToList(result);
-            display(employee);
-        }
-
-
-        private void display(List<Employee> result)
-        {
-            dgvResult.Rows.Clear();
-            foreach (Employee v in result)
-                dgvResult.Rows.Add(v.ID, v.FNAME, v.LNAME, v.SALARY);
-        }*/
-
         private void frmA1_Load(object sender, EventArgs e)
         {
             employee = new List<Employee>();
@@ -142,6 +101,11 @@ namespace Assignment1
             storeDataToList(result);
             disp(employee);
 
+        }
+
+        private void cmdShowAll_Click(object sender, EventArgs e)
+        {
+            retrieveAll();
         }
 
         private void cmdExit_Click(object sender, EventArgs e)

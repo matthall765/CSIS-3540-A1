@@ -22,11 +22,6 @@ namespace Assignment1
             FNAME = FName;
             LNAME = LName;
             SALARY = Salary;
-
-            /*setEmpID(EmpID);
-            setFName(FName);
-            setLName(LName);
-            setSalary(Salary);*/
         }
 
         public int ID
@@ -75,45 +70,5 @@ namespace Assignment1
                 Salary = value;
             }
         }
-
-        /*public void setEmpID(int EmpID)
-        {
-            this.EmpID = EmpID;
-        }
-
-        public void setFName(string FName)
-        {
-            this.FName = FName;
-        }
-
-        public void setLName(string LName)
-        {
-            this.LName = LName;
-        }
-
-        public void setSalary(double Salary)
-        {
-            this.Salary = Salary;
-        }
-
-        public int getEmpID()
-        {
-            return EmpID;
-        }
-
-        public string getFName()
-        {
-            return FName;
-        }
-
-        public string getLName()
-        {
-            return FName;
-        }
-
-        public double getSalary()
-        {
-            return Salary;
-        }*/
     }
 }
