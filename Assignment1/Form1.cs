@@ -73,7 +73,7 @@ namespace Assignment1
 
             retrieveAll();
 
-            indx = dgvResult.RowCount + 1;
+            indx = dgvResult.RowCount;
         }
 
         private void cmdInsert_Click(object sender, EventArgs e)
@@ -101,6 +101,14 @@ namespace Assignment1
             storeDataToList(result);
             disp(employee);
 
+        }
+
+        private void cmdLINQ_Click(object sender, EventArgs e)
+        {
+            IEnumerable<Employee> result = from a in employee
+                                           where a.ID == int.Parse(txtEmpID.Text)
+                                           select a;
+            disp(result.ToList<Employee>());
         }
 
         private void cmdShowAll_Click(object sender, EventArgs e)

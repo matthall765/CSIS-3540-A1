@@ -127,6 +127,7 @@
             this.cmdLINQ.TabIndex = 10;
             this.cmdLINQ.Text = "LINQ Search";
             this.cmdLINQ.UseVisualStyleBackColor = true;
+            this.cmdLINQ.Click += new System.EventHandler(this.cmdLINQ_Click);
             // 
             // cmdInsert
             // 
