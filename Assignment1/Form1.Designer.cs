@@ -47,7 +47,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 45);
+            this.label1.Location = new System.Drawing.Point(103, 45);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 0;
@@ -56,7 +56,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(182, 41);
+            this.label2.Location = new System.Drawing.Point(270, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 1;
@@ -64,14 +64,14 @@
             // 
             // txtFName
             // 
-            this.txtFName.Location = new System.Drawing.Point(78, 38);
+            this.txtFName.Location = new System.Drawing.Point(166, 38);
             this.txtFName.Name = "txtFName";
             this.txtFName.Size = new System.Drawing.Size(100, 20);
             this.txtFName.TabIndex = 2;
             // 
             // txtLName
             // 
-            this.txtLName.Location = new System.Drawing.Point(246, 38);
+            this.txtLName.Location = new System.Drawing.Point(334, 38);
             this.txtLName.Name = "txtLName";
             this.txtLName.Size = new System.Drawing.Size(100, 20);
             this.txtLName.TabIndex = 3;
@@ -79,7 +79,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(5, 15);
+            this.label3.Location = new System.Drawing.Point(93, 15);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 13);
             this.label3.TabIndex = 4;
@@ -88,7 +88,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(204, 15);
+            this.label4.Location = new System.Drawing.Point(292, 15);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 13);
             this.label4.TabIndex = 5;
@@ -96,30 +96,31 @@
             // 
             // txtEmpID
             // 
-            this.txtEmpID.Location = new System.Drawing.Point(78, 12);
+            this.txtEmpID.Location = new System.Drawing.Point(166, 12);
             this.txtEmpID.Name = "txtEmpID";
             this.txtEmpID.Size = new System.Drawing.Size(100, 20);
             this.txtEmpID.TabIndex = 6;
             // 
             // txtSalary
             // 
-            this.txtSalary.Location = new System.Drawing.Point(246, 8);
+            this.txtSalary.Location = new System.Drawing.Point(334, 8);
             this.txtSalary.Name = "txtSalary";
             this.txtSalary.Size = new System.Drawing.Size(100, 20);
             this.txtSalary.TabIndex = 7;
             // 
             // cmdDb4o
             // 
-            this.cmdDb4o.Location = new System.Drawing.Point(7, 118);
+            this.cmdDb4o.Location = new System.Drawing.Point(7, 64);
             this.cmdDb4o.Name = "cmdDb4o";
             this.cmdDb4o.Size = new System.Drawing.Size(59, 50);
             this.cmdDb4o.TabIndex = 9;
             this.cmdDb4o.Text = "Db4o Search";
             this.cmdDb4o.UseVisualStyleBackColor = true;
+            this.cmdDb4o.Click += new System.EventHandler(this.cmdDb4o_Click);
             // 
             // cmdLINQ
             // 
-            this.cmdLINQ.Location = new System.Drawing.Point(7, 174);
+            this.cmdLINQ.Location = new System.Drawing.Point(7, 146);
             this.cmdLINQ.Name = "cmdLINQ";
             this.cmdLINQ.Size = new System.Drawing.Size(59, 51);
             this.cmdLINQ.TabIndex = 10;
@@ -128,12 +129,13 @@
             // 
             // cmdInsert
             // 
-            this.cmdInsert.Location = new System.Drawing.Point(7, 61);
+            this.cmdInsert.Location = new System.Drawing.Point(454, 7);
             this.cmdInsert.Name = "cmdInsert";
             this.cmdInsert.Size = new System.Drawing.Size(59, 51);
             this.cmdInsert.TabIndex = 11;
             this.cmdInsert.Text = "Insert New Record";
             this.cmdInsert.UseVisualStyleBackColor = true;
+            this.cmdInsert.Click += new System.EventHandler(this.cmdInsert_Click);
             // 
             // cmdExit
             // 
@@ -143,20 +145,21 @@
             this.cmdExit.TabIndex = 12;
             this.cmdExit.Text = "Exit";
             this.cmdExit.UseVisualStyleBackColor = true;
+            this.cmdExit.Click += new System.EventHandler(this.cmdExit_Click);
             // 
             // dgvResult
             // 
             this.dgvResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvResult.Location = new System.Drawing.Point(78, 64);
             this.dgvResult.Name = "dgvResult";
-            this.dgvResult.Size = new System.Drawing.Size(265, 219);
+            this.dgvResult.Size = new System.Drawing.Size(436, 219);
             this.dgvResult.TabIndex = 13;
             // 
             // frmA1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(355, 302);
+            this.ClientSize = new System.Drawing.Size(525, 302);
             this.Controls.Add(this.dgvResult);
             this.Controls.Add(this.cmdExit);
             this.Controls.Add(this.cmdInsert);
@@ -172,6 +175,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmA1";
             this.Text = "Assignment 1 - Matthew Hall";
+            this.Load += new System.EventHandler(this.frmA1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvResult)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
